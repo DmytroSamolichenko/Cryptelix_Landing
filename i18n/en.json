@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "logo": "Cryptelix",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "about": "About",
+    "cta": "Join Waitlist"
+  },
+  "hero": {
+    "headline": "Trade Smarter, Not Harder",
+    "subheadline": "AI-powered assistant that helps you make better crypto trading decisions, especially when emotions run high.",
+    "description": "Control FOMO, overcome fear, and make rational decisions with real-time AI guidance right in your browser.",
+    "primaryCta": "Get the Extension",
+    "secondaryCta": "Learn More"
+  },
+  "problem": {
+    "title": "Trading is Harder Than It Looks",
+    "subtitle": "Especially when emotions take over",
+    "fomo": {
+      "title": "FOMO Strikes",
+      "description": "You see a coin pumping and jump in without research, only to buy at the peak."
+    },
+    "panic": {
+      "title": "Panic Selling",
+      "description": "A small dip triggers fear, and you sell at a loss instead of holding strategically."
+    },
+    "emotions": {
+      "title": "Emotional Trading",
+      "description": "Stress and excitement cloud your judgment, leading to impulsive decisions."
+    },
+    "isolation": {
+      "title": "Going It Alone",
+      "description": "As a beginner, you lack the experience to recognize patterns and make informed choices."
+    }
+  },
+  "solution": {
+    "title": "Your AI Trading Companion",
+    "subtitle": "Cryptelix analyzes market conditions and your behavior in real time",
+    "description": "Our browser extension provides intelligent guidance exactly when you need it—before you make a decision you might regret.",
+    "features": {
+      "realtime": "Real-time Analysis",
+      "emotions": "Emotion Detection",
+      "guidance": "Smart Guidance",
+      "education": "Beginner-Friendly"
+    }
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need to trade with confidence",
+    "emotionAware": {
+      "title": "Emotion-Aware AI",
+      "description": "Detects when you're about to make an emotional decision and provides calm, data-driven alternatives."
+    },
+    "fomoDetection": {
+      "title": "FOMO Detection",
+      "description": "Warns you when you're about to buy based on hype rather than fundamentals."
+    },
+    "riskReminders": {
+      "title": "Risk Reminders",
+      "description": "Keeps you aware of your risk tolerance and helps prevent over-leveraging."
+    },
+    "explanations": {
+      "title": "Clear Explanations",
+      "description": "Breaks down complex market signals into simple, actionable insights for beginners."
+    },
+    "patterns": {
+      "title": "Pattern Recognition",
+      "description": "Identifies market patterns and trends to help you make more informed decisions."
+    },
+    "history": {
+      "title": "Decision History",
+      "description": "Tracks your trading decisions and helps you learn from past mistakes."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Get started in three simple steps",
+    "step1": {
+      "title": "Install Extension",
+      "description": "Add Cryptelix to your browser in seconds. No complex setup required."
+    },
+    "step2": {
+      "title": "Browse & Analyze",
+      "description": "As you explore trading platforms, our AI analyzes market conditions and your behavior in real time."
+    },
+    "step3": {
+      "title": "Decide Calmly",
+      "description": "Receive intelligent prompts and warnings before making decisions, helping you trade with confidence."
+    }
+  },
+  "trust": {
+    "title": "Built for Serious Traders",
+    "subtitle": "Ethical AI for long-term success",
+    "vision": "We believe in responsible trading. Cryptelix isn't about gambling—it's about making informed decisions that align with your goals and risk tolerance.",
+    "principles": {
+      "ethics": "Ethical AI",
+      "education": "Education First",
+      "transparency": "Transparency",
+      "longterm": "Long-term Focus"
+    }
+  },
+  "cta": {
+    "title": "Ready to Trade Smarter?",
+    "subtitle": "Join thousands of traders who are making better decisions with AI assistance.",
+    "button": "Join the Waitlist",
+    "subtext": "Be among the first to experience the future of crypto trading."
+  },
+  "statistics": {
+    "fomoFree": "FOMO-free users",
+    "closedTrades": "Successfully Closed Trades",
+    "activeUsers": "Active Users",
+    "transactions": "Transactions made"
+  },
+  "footer": {
+    "copyright": "© 2024 Cryptelix. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

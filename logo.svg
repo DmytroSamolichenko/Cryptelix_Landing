@@ -1,0 +1,41 @@
+<svg width="220" height="50" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F4D03F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- CRYPTELIX Text - More refined typography -->
+  <text x="0" y="36" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" letter-spacing="2">
+    CRYPTELIX
+  </text>
+  
+  <!-- Gold Icon - Improved stylized human figure -->
+  <g transform="translate(165, 8)" filter="url(#glow)">
+    <!-- Head (circle with gradient) -->
+    <circle cx="18" cy="10" r="7" fill="url(#goldGradient)"/>
+    <circle cx="18" cy="10" r="5" fill="#FFD700" opacity="0.6"/>
+    
+    <!-- Left Arm (more curved, celebratory) -->
+    <path d="M 10 18 Q 6 12, 2 6" stroke="url(#goldGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right Arm (more curved, celebratory) -->
+    <path d="M 26 18 Q 30 12, 34 6" stroke="url(#goldGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Body (smooth U shape) -->
+    <path d="M 18 20 Q 12 28, 10 32 Q 12 36, 15 32 Q 18 28, 21 32 Q 24 36, 26 32 Q 24 28, 18 20 Z" 
+          fill="url(#goldGradient)" stroke="#D4AF37" stroke-width="1.5"/>
+    
+    <!-- Glow effect -->
+    <circle cx="18" cy="10" r="9" fill="none" stroke="#F4D03F" stroke-width="1" opacity="0.4"/>
+  </g>
+</svg>

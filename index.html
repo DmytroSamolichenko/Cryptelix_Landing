@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cryptelix - AI-powered crypto trading assistant that helps you make better decisions and control emotions like FOMO and fear.">
+    <title>Cryptelix - AI-Powered Crypto Trading Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">CRYPTELIX</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link" data-i18n="nav.features">Features</a>
+                <a href="#how-it-works" class="nav-link" data-i18n="nav.howItWorks">How It Works</a>
+                <a href="#trust" class="nav-link" data-i18n="nav.about">About</a>
+                <button class="nav-cta-btn" data-i18n="nav.cta">Join Waitlist</button>
+            </div>
+            <div class="nav-lang-switcher">
+                <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+                <button class="lang-btn" data-lang="ua" aria-label="Switch to Ukrainian">UA</button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline" data-i18n="hero.headline">Trade Smarter, Not Harder</h1>
+                <p class="hero-subheadline" data-i18n="hero.subheadline">AI-powered assistant that helps you make better crypto trading decisions, especially when emotions run high.</p>
+                <p class="hero-description" data-i18n="hero.description">Control FOMO, overcome fear, and make rational decisions with real-time AI guidance right in your browser.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" data-i18n="hero.primaryCta">Get the Extension</button>
+                    <button class="btn btn-secondary" data-i18n="hero.secondaryCta">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-phones">
+                    <div class="hero-phone phone-1">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="phone-content">
+                                    <div class="phone-header">
+                                        <div class="phone-title">BTC/USD</div>
+                                        <div class="phone-price">$42,350</div>
+                                        <div class="phone-change positive">+2.4%</div>
+                                    </div>
+                                    <div class="phone-chart">
+                                        <svg viewBox="0 0 200 100" class="phone-chart-svg">
+                                            <path d="M 10 80 L 40 70 L 70 50 L 100 30 L 130 40 L 160 50 L 190 45" 
+                                                  stroke="#d4af37" stroke-width="2.5" fill="none" class="chart-path"/>
+                                            <path d="M 10 80 L 40 70 L 70 50 L 100 30 L 130 40 L 160 50 L 190 45 L 190 100 L 10 100 Z" 
+                                                  fill="url(#phoneGrad1)" opacity="0.3"/>
+                                            <defs>
+                                                <linearGradient id="phoneGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.5" />
+                                                    <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0.1" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="phone-indicators">
+                                        <div class="phone-indicator">
+                                            <span class="indicator-dot"></span>
+                                            <span>AI Active</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-phone phone-2">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="phone-content">
+                                    <div class="phone-header">
+                                        <div class="phone-title">ETH/USD</div>
+                                        <div class="phone-price">$2,850</div>
+                                        <div class="phone-change positive">+1.8%</div>
+                                    </div>
+                                    <div class="phone-chart">
+                                        <svg viewBox="0 0 200 100" class="phone-chart-svg">
+                                            <path d="M 10 85 L 40 75 L 70 55 L 100 35 L 130 45 L 160 55 L 190 50" 
+                                                  stroke="#d4af37" stroke-width="2.5" fill="none" class="chart-path"/>
+                                            <path d="M 10 85 L 40 75 L 70 55 L 100 35 L 130 45 L 160 55 L 190 50 L 190 100 L 10 100 Z" 
+                                                  fill="url(#phoneGrad2)" opacity="0.3"/>
+                                            <defs>
+                                                <linearGradient id="phoneGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.5" />
+                                                    <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0.1" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="phone-indicators">
+                                        <div class="phone-indicator">
+                                            <span class="indicator-dot"></span>
+                                            <span>Safe Entry</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-connections">
+                    <svg class="connection-svg" viewBox="0 0 400 400">
+                        <path d="M 100 200 Q 150 150, 200 200 T 300 200" 
+                              stroke="url(#connectionGrad)" stroke-width="2" fill="none" opacity="0.4" class="connection-line"/>
+                        <path d="M 120 180 Q 170 130, 220 180 T 320 180" 
+                              stroke="url(#connectionGrad)" stroke-width="2" fill="none" opacity="0.3" class="connection-line"/>
+                        <defs>
+                            <linearGradient id="connectionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.6" />
+                                <stop offset="50%" style="stop-color:#ffd700;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0.6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slogan Section 1 -->
+    <section class="slogan-section" id="slogan-1">
+        <div class="slogan-reveal" data-slogan="1">
+            <span class="slogan-word slogan-word-1">Think</span>
+            <span class="slogan-word slogan-word-2">Clearly</span>
+        </div>
+    </section>
+
+    <!-- Problem Section - Real-Time Analysis -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real-Time Trading Analysis</h2>
+                <p class="section-subtitle">Understand market patterns and emotional triggers before they impact your decisions</p>
+            </div>
+            
+            <div class="feature-icons-grid">
+                <div class="feature-icon-card" data-animate="fade-up">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+                            <path d="M 30 50 L 45 65 L 70 35" stroke="url(#goldGradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-icon-title">100+ Crypto Assets</h3>
+                    <p class="feature-icon-description">Track and analyze over 100 cryptocurrencies with real-time data and AI-powered insights to make informed trading decisions.</p>
+                </div>
+                
+                <div class="feature-icon-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 20 70 L 30 50 L 50 40 L 70 50 L 80 70 L 50 90 Z" fill="none" stroke="url(#goldGradient2)" stroke-width="3"/>
+                            <path d="M 30 50 L 50 40 L 70 50" stroke="url(#goldGradient2)" stroke-width="3" fill="none"/>
+                            <defs>
+                                <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-icon-title">Investment Management</h3>
+                    <p class="feature-icon-description">AI-powered portfolio management that helps you optimize your investments and avoid emotional trading mistakes.</p>
+                </div>
+                
+                <div class="feature-icon-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 50 20 Q 30 30, 30 50 Q 30 70, 50 80 Q 70 70, 70 50 Q 70 30, 50 20 Z" fill="none" stroke="url(#goldGradient3)" stroke-width="3"/>
+                            <path d="M 50 40 L 50 60 M 40 50 L 60 50" stroke="url(#goldGradient3)" stroke-width="3" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="goldGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-icon-title">Secure & Private</h3>
+                    <p class="feature-icon-description">Your data stays private. We use advanced encryption and never store your trading credentials or personal information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slogan Section 2 -->
+    <section class="slogan-section" id="slogan-2">
+        <div class="slogan-reveal" data-slogan="2">
+            <span class="slogan-word slogan-word-1">Trade</span>
+            <span class="slogan-word slogan-word-2">Wisely</span>
+        </div>
+    </section>
+
+    <!-- Solution Section - Seamless Trading -->
+    <section class="solution seamless-section" id="solution">
+        <div class="container">
+            <div class="seamless-content">
+                <div class="seamless-text">
+                    <h2 class="section-title">Seamless Trading for Everyone</h2>
+                    <p class="section-subtitle">Whether you're a beginner or experienced trader, Cryptelix adapts to your level and provides intelligent guidance when emotions threaten to cloud your judgment.</p>
+                    <button class="btn btn-primary">Explore Now</button>
+                </div>
+                <div class="seamless-visual">
+                    <div class="stats-circle">
+                        <div class="stat-circle-item stat-top">
+                            <div class="stat-circle-value">500M+</div>
+                            <div class="stat-circle-label">Users</div>
+                        </div>
+                        <div class="stat-circle-item stat-center">
+                            <div class="stat-circle-value-large">25,450,200</div>
+                            <div class="stat-circle-label">Transactions</div>
+                        </div>
+                        <div class="stat-circle-item stat-bottom">
+                            <div class="stat-circle-value">100+</div>
+                            <div class="stat-circle-label">Assets</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section - Long & Short Term Forecast -->
+    <section class="features forecast-section" id="features">
+        <div class="container">
+            <div class="forecast-content">
+                <div class="forecast-text">
+                    <h2 class="section-title">Long & Short-Term Forecast</h2>
+                    <p class="section-subtitle">Get AI-powered predictions for both immediate trading opportunities and long-term investment strategies. Our advanced algorithms analyze market trends, sentiment, and historical patterns to provide actionable insights.</p>
+                    <button class="btn btn-primary">Explore Now</button>
+                </div>
+                <div class="forecast-visual">
+                    <div class="phone-mockup phone-left">
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="screen-chart">
+                                    <svg viewBox="0 0 200 120" class="chart-display">
+                                        <path d="M 10 100 L 40 80 L 70 60 L 100 40 L 130 50 L 160 70 L 190 90" 
+                                              stroke="#d4af37" stroke-width="2" fill="none"/>
+                                        <path d="M 10 100 L 40 80 L 70 60 L 100 40 L 130 50 L 160 70 L 190 90 L 190 120 L 10 120 Z" 
+                                              fill="url(#chartFill)" opacity="0.3"/>
+                                        <defs>
+                                            <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.4" />
+                                                <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0.1" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="screen-stats">
+                                    <div class="screen-stat">BTC: $42,350</div>
+                                    <div class="screen-stat">+2.4%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-mockup phone-right">
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="screen-chart">
+                                    <svg viewBox="0 0 200 120" class="chart-display">
+                                        <path d="M 10 90 L 40 70 L 70 50 L 100 30 L 130 40 L 160 60 L 190 80" 
+                                              stroke="#d4af37" stroke-width="2" fill="none"/>
+                                        <path d="M 10 90 L 40 70 L 70 50 L 100 30 L 130 40 L 160 60 L 190 80 L 190 120 L 10 120 Z" 
+                                              fill="url(#chartFill2)" opacity="0.3"/>
+                                        <defs>
+                                            <linearGradient id="chartFill2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.4" />
+                                                <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0.1" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="screen-stats">
+                                    <div class="screen-stat">ETH: $2,850</div>
+                                    <div class="screen-stat">+1.8%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security-section" id="security">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful, Privacy & Protection</h2>
+                <p class="section-subtitle">Your security and privacy are our top priorities. We use industry-leading encryption and never compromise on data protection.</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card" data-animate="fade-up">
+                    <div class="security-icon-wrapper">
+                        <svg class="security-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 50 20 L 30 30 L 30 50 Q 30 70, 50 80 Q 70 70, 70 50 L 70 30 Z" 
+                                  fill="none" stroke="url(#securityGrad1)" stroke-width="3"/>
+                            <path d="M 50 50 L 45 55 L 50 60 L 55 55 Z" fill="url(#securityGrad1)"/>
+                            <defs>
+                                <linearGradient id="securityGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="security-title">Trust</h3>
+                    <p class="security-description">Built on transparency and reliability. Our AI algorithms are open about their decision-making process, helping you understand every recommendation.</p>
+                </div>
+                
+                <div class="security-card" data-animate="fade-up" data-delay="100">
+                    <div class="security-icon-wrapper">
+                        <svg class="security-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="30" y="40" width="40" height="40" rx="5" fill="none" stroke="url(#securityGrad2)" stroke-width="3"/>
+                            <path d="M 40 50 L 45 55 L 60 40" stroke="url(#securityGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="securityGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="security-title">Security</h3>
+                    <p class="security-description">Bank-level encryption protects your data. We never store passwords, API keys, or sensitive trading information on our servers.</p>
+                </div>
+                
+                <div class="security-card" data-animate="fade-up" data-delay="200">
+                    <div class="security-icon-wrapper">
+                        <svg class="security-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 30 30 L 50 20 L 70 30 L 70 50 L 50 70 L 30 50 Z" 
+                                  fill="none" stroke="url(#securityGrad3)" stroke-width="3"/>
+                            <path d="M 45 45 L 50 50 L 55 45" stroke="url(#securityGrad3)" stroke-width="2" fill="none"/>
+                            <defs>
+                                <linearGradient id="securityGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="security-title">Developers</h3>
+                    <p class="security-description">Built by experienced developers who understand both trading and technology. Continuous updates ensure you always have the latest features and security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Are Saying</h2>
+                <p class="section-subtitle">Join thousands of traders who are making better decisions with AI assistance</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate="fade-up">
+                    <div class="testimonial-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Cryptelix saved me from making several emotional trades. The AI warnings are spot-on and have helped me become a much more disciplined trader."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div class="author-info">
+                            <div class="author-name">Alex Smith</div>
+                            <div class="author-title">Crypto Trader</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"As a beginner, I was making too many mistakes. Cryptelix helps me understand market signals and avoid FOMO. It's like having a mentor always watching."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <div class="author-name">Maria Johnson</div>
+                            <div class="author-title">Investment Enthusiast</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"The emotion detection feature is incredible. It caught me about to make a panic sell and suggested waiting. That one decision saved me thousands."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <div class="author-name">Robert Kim</div>
+                            <div class="author-title">Day Trader</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="product-bar" id="statistics">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Statistics</h2>
+            </div>
+        </div>
+        <div class="product-bar-wrapper">
+            <div class="product-info-blocks" data-animate="fade-up">
+                <h2 class="more-info">
+                    <span class="stat-number" data-target="80" data-suffix="%">0</span>
+                </h2>
+                <p class="more-info-name" data-i18n="statistics.fomoFree">FOMO-free users</p>
+            </div>
+            <div class="product-info-blocks" data-animate="fade-up" data-delay="100">
+                <h2 class="more-info">
+                    <span class="stat-number" data-target="1" data-suffix="M">0</span>
+                </h2>
+                <p class="more-info-name" data-i18n="statistics.closedTrades">Successfully Closed Trades</p>
+            </div>
+            <div class="product-info-blocks" data-animate="fade-up" data-delay="200">
+                <h2 class="more-info">
+                    <span class="stat-number" data-target="3" data-suffix="K">0</span>
+                </h2>
+                <p class="more-info-name" data-i18n="statistics.activeUsers">Active Users</p>
+            </div>
+            <div class="product-info-blocks" data-animate="fade-up" data-delay="300">
+                <h2 class="more-info">
+                    <span class="stat-number" data-target="200" data-suffix="K">0</span>
+                </h2>
+                <p class="more-info-name" data-i18n="statistics.transactions">Transactions made</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="howItWorks.title">How It Works</h2>
+                <p class="section-subtitle" data-i18n="howItWorks.subtitle">Get started in three simple steps</p>
+            </div>
+            <div class="steps-container">
+                <div class="step step-with-visual" data-animate="fade-up">
+                    <div class="step-visual">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon-circle">
+                                <svg viewBox="0 0 100 100" class="step-icon-svg">
+                                    <circle cx="50" cy="50" r="40" fill="rgba(244, 208, 63, 0.1)" stroke="#F4D03F" stroke-width="2"/>
+                                    <path d="M 30 50 L 45 65 L 70 35" stroke="#F4D03F" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="step-number">01</div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="howItWorks.step1.title">Install Extension</h3>
+                        <p class="step-description" data-i18n="howItWorks.step1.description">Add Cryptelix to your browser in seconds. No complex setup required.</p>
+                    </div>
+                </div>
+                <div class="step step-with-visual" data-animate="fade-up" data-delay="200">
+                    <div class="step-visual">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon-circle">
+                                <svg viewBox="0 0 100 100" class="step-icon-svg">
+                                    <circle cx="50" cy="50" r="40" fill="rgba(244, 208, 63, 0.1)" stroke="#F4D03F" stroke-width="2"/>
+                                    <circle cx="50" cy="50" r="15" fill="#F4D03F"/>
+                                    <circle cx="35" cy="35" r="8" fill="#F4D03F" opacity="0.6"/>
+                                    <circle cx="65" cy="35" r="8" fill="#F4D03F" opacity="0.6"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="step-number">02</div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="howItWorks.step2.title">Browse & Analyze</h3>
+                        <p class="step-description" data-i18n="howItWorks.step2.description">As you explore trading platforms, our AI analyzes market conditions and your behavior in real time.</p>
+                    </div>
+                </div>
+                <div class="step step-with-visual" data-animate="fade-up" data-delay="400">
+                    <div class="step-visual">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon-circle">
+                                <svg viewBox="0 0 100 100" class="step-icon-svg">
+                                    <circle cx="50" cy="50" r="40" fill="rgba(244, 208, 63, 0.1)" stroke="#F4D03F" stroke-width="2"/>
+                                    <path d="M 50 30 L 50 50 L 70 50" stroke="#F4D03F" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                    <circle cx="50" cy="50" r="3" fill="#F4D03F"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="step-number">03</div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="howItWorks.step3.title">Decide Calmly</h3>
+                        <p class="step-description" data-i18n="howItWorks.step3.description">Receive intelligent prompts and warnings before making decisions, helping you trade with confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slogan Section 3 -->
+    <section class="slogan-section" id="slogan-3">
+        <div class="slogan-reveal" data-slogan="3">
+            <span class="slogan-word slogan-word-1">Fear</span>
+            <span class="slogan-word slogan-word-2">Nothing</span>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust" id="trust">
+        <div class="container">
+            <div class="trust-content">
+                <div class="trust-text">
+                    <h2 class="section-title" data-i18n="trust.title">Built for Serious Traders</h2>
+                    <p class="section-subtitle" data-i18n="trust.subtitle">Ethical AI for long-term success</p>
+                    <p class="trust-vision" data-i18n="trust.vision">We believe in responsible trading. Cryptelix isn't about gambling—it's about making informed decisions that align with your goals and risk tolerance.</p>
+                    <div class="trust-principles">
+                        <div class="principle-item">
+                            <div class="principle-icon">⚖️</div>
+                            <span data-i18n="trust.principles.ethics">Ethical AI</span>
+                        </div>
+                        <div class="principle-item">
+                            <div class="principle-icon">🎓</div>
+                            <span data-i18n="trust.principles.education">Education First</span>
+                        </div>
+                        <div class="principle-item">
+                            <div class="principle-icon">🔍</div>
+                            <span data-i18n="trust.principles.transparency">Transparency</span>
+                        </div>
+                        <div class="principle-item">
+                            <div class="principle-icon">📈</div>
+                            <span data-i18n="trust.principles.longterm">Long-term Focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-i18n="cta.title">Ready to Trade Smarter?</h2>
+                <p class="cta-subtitle" data-i18n="cta.subtitle">Join thousands of traders who are making better decisions with AI assistance.</p>
+                <button class="btn btn-primary btn-large" data-i18n="cta.button">Join the Waitlist</button>
+                <p class="cta-subtext" data-i18n="cta.subtext">Be among the first to experience the future of crypto trading.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-text">CRYPTELIX</span>
+                </a>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#" class="footer-link" data-i18n="footer.terms">Terms of Service</a>
+                </div>
+                <div class="footer-lang-switcher">
+                    <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+                    <button class="lang-btn" data-lang="ua" aria-label="Switch to Ukrainian">UA</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-i18n="footer.copyright">© 2024 Cryptelix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
