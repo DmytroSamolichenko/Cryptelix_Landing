@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Cryptelix – Join the Waitlist</title>
@@ -103,6 +104,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="card">
@@ -115,18 +117,13 @@
 
     <form id="waitlistForm">
       <div class="input-group">
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-        />
+        <input type="email" name="email" placeholder="Enter your email" required />
         <button type="submit">Join</button>
       </div>
     </form>
 
     <div class="success" id="successMessage">
-      ✅ You’re on the waitlist!  
+      ✅ You’re on the waitlist!
       We’ll notify you as soon as Cryptelix is live.
     </div>
 
@@ -142,27 +139,30 @@
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      const email = form.email.value;
+      const email = form.email.value.trim();
+      if (!email) return;
 
       try {
-        await fetch("https://cryptelix.app.n8n.cloud/webhook/8a3786b8-0ce6-4d68-ac6b-6f84a463840e", {
+        await fetch("https://cryptelix.app.n8n.cloud/webhook-test/8a3786b8-0ce6-4d68-ac6b-6f84a463840e", {
           method: "POST",
+          mode: "no-cors",
           headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
           },
           body: JSON.stringify({
             email: email,
-            source: "waitlist"
-          })
+            source: "waitlist",
+          }),
         });
 
         form.style.display = "none";
         success.style.display = "block";
       } catch (error) {
+        console.error("Webhook error:", error);
         alert("Something went wrong. Please try again.");
       }
     });
   </script>
-
 </body>
+
 </html>
