@@ -62,6 +62,8 @@
       color: #fff;
       font-size: 15px;
       outline: none;
+      min-width: 0;
+      /* важливо для flex на мобілках */
     }
 
     input::placeholder {
@@ -79,6 +81,7 @@
       cursor: pointer;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
       box-shadow: 0 10px 30px rgba(241, 196, 15, 0.35);
+      white-space: nowrap;
     }
 
     button:hover {
@@ -101,6 +104,64 @@
       margin-top: 22px;
       font-size: 13px;
       color: #777;
+    }
+
+    /* ===== Mobile адаптація ===== */
+    @media (max-width: 520px) {
+      body {
+        padding: 14px;
+        align-items: flex-start;
+        /* щоб картка не "прилипала" по центру, коли мало місця */
+      }
+
+      .card {
+        padding: 28px 18px;
+        border-radius: 18px;
+        margin-top: 14px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 1.15;
+        margin-bottom: 14px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 18px;
+      }
+
+      .input-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input[type="email"],
+      button {
+        width: 100%;
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-size: 15px;
+      }
+
+      .success {
+        font-size: 14px;
+      }
+
+      .footer-text {
+        font-size: 12px;
+      }
+    }
+
+    /* Дуже маленькі екрани */
+    @media (max-width: 360px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 24px 16px;
+      }
     }
   </style>
 </head>
